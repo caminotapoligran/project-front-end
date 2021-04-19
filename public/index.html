@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link href="/tailwind.css" rel="stylesheet">
+    <title>ELECTROTECNO</title>
+</head>
+<body style="background-color: #EDF2F7;">
+  
+    <nav class="flex items-center justify-between flex-wrap  bg-blue-600 p-6 shadow-lg">
+    <div class="flex items-center flex-shrink-0 text-white mr-6 ">
+      <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+      <span class="font-semibold text-xl tracking-tight">Electrotecno</span>
+    </div>
+    <div class="block lg:hidden">
+        <button id="boton-menu"
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" 
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+    </div>
+    <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+      <div class="text-sm lg:flex-grow">
+        <a href="index.html" class="block mt-4  lg:inline-block lg:mt-0 text-yellow-400 font-bold underline  hover:text-white mr-4">
+            Inicio
+        </a>
+        <a href="productos.html" class="block mt-4 lg:inline-block lg:mt-0 text-blue-50 hover:text-white mr-4">
+            Productos
+        </a>
+
+      </div>
+      <div>
+        <a href="resgistro.html" class="inline-block text-sm px-4 py-2 leading-none  rounded  text-white mx-auto  hover:text-teal-500 hover:bg-blue-500 mt-4 lg:mt-0">Registrarse</a>
+      </div> 
+      <div>
+        <a href="resgistro.html" class="inline-block text-sm px-4 py-2 leading-none  rounded  text-white mx-auto  hover:text-teal-500 hover:bg-blue-500 mt-4 lg:mt-0">Registrarse</a>
+      </div>
+      <div>
+        <a href="compra.html" class="inline-block  text-sm px-4 py-2 ml-2  leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-900 hover:bg-white mt-4 lg:mt-0">
+            
+          <div class="flex">
+              <div> <i class="fas fa-cart-plus "></i>  </div>
+              <div class="mx-1">
+                  Carrito
+              </div>
+              <div class="rounded-full h-5 w-5 flex items-center justify-center bg-red-600" id="cant">
+                  <!-- <span class=" text-center">1</span>  -->
+              </div>
+          </div>
+          
+          </a> 
+      </div>
+    </div>
+    </nav>
+    <!-- Bananer -->
+    <div>
+        <img src="image/anuncio2.png" width="100%" alt="descuento" srcset="">
+    </div>
+    <!-- style="min-height: calc(100vh - 123px);" -->
+    <div class="container mx-auto mt-5" >
+        <div class="sm:flex ml-3 grid-cols-1 ">
+            <div class="sm:w-3/5 grid-span-auto border mx-3 ml-3 mt-3 rounded  bg-white rounded-xl shadow overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                      <img class="h-48 w-full object-cover md:w-48" src="image/hawei.png" alt="Man looking at item at a store">
+                    </div>
+                    <div class="p-8">
+                      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold ">Laptop</div>
+                      <a href="producto.html?id=1" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+                        HUAWEI Matebook 13 (i5,8gb + 512gb new,Gris Espacial)
+                      </a>
+                      <!-- <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p> -->
+                      <p class="mt-2 text-gray-500">
+                        SISTEMA OPERATIVO: Windows 10 Home 64-bit, 
+                        NOMBRE DEL MODELO: MateBook 13 2020,
+                        COLOR: Gris Espacial,
+                        MEMORIA: 8 GB DDR4,
+                        PROCESADOR: Intel-i5,
+                        Disco duro: 1 TB
+                      </p>
+                    </div>
+                  </div>
+            </div>
+            <div style="background-color:white;" class="sm:w-2/5 grid-span-auto border mt-3 rounded rounded-xl shadow overflow-hidden ml-2 mx-3">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                      <img class="h-full w-full object-cover md:w-48" src="image/hp2.JPG" alt="Man looking at item at a store">
+                    </div>
+                    <div class="p-8">
+                      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">LAPTOP</div>
+                      <a href="producto.html?id=11" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+                        Celular Samsung Galaxy S21 128GB
+                      </a>
+                      <!-- <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p> -->
+                      <p class="mt-2 text-gray-500">
+                        SISTEMA OPERATIVO: Windows 10 Home, 
+                        NOMBRE DEL MODELO: 15-dk0008la,
+                        COLOR: Blanco,
+                        MEMORIA: 4 GB DDR4,
+                        PROCESADOR: AMD Ryzen 3, 
+                        Disco duro SSD: 256 GB
+
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- segunda parte -->
+        <div class="sm:flex space-x-4 mx-4 mt-5 sm:grid-cols-3 grid-cols-1 grad-4" >
+            <div class="flex-1 border rounded rounded-xl mt-3 ml-3 sm:ml shadow  overflow-hidden" style="background-color:white;">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                      <img class="h-full w-full object-cover md:w-48" src="image/asus.jpeg" alt="Man looking at item at a store">
+                    </div>
+                    <div class="p-8">
+                      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Laptop</div>
+                      <a href="producto.html?id=3" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+                        Portátil ASUS VivoBook 14
+                     </a>
+                      <!-- <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p> -->
+                      <p class="mt-2 text-gray-500">
+                        SISTEMA OPERATIVO: Windows 10 Home 64-bit, 
+                        NOMBRE DEL MODELO: X413JA-BV317T,
+                        COLOR: Gris Espacial,
+                        MEMORIA: 8 GB DDR4,
+                        PROCESADOR: Intel CORE i5,
+                        Disco duro SSD: 256 GB
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 border rounded sm:ml-2 mt-3 rounded-xl shadow overflow-hidden" style="background-color:white;">
+                <div class="md:flex ">
+                    <div class="md:flex-shrink-0">
+                      <img class="h-full w-full object-cover md:w-48" src="image/lenevo2.jpg" height="100%" alt="Man looking at item at a store">
+                    </div>
+                    <div class="p-8">
+                      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">smartphone</div>
+                      <a href="producto.html?id=12" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+                        Lenovol IdeaPad 3
+                      </a>
+                      <!-- <p class="mt-2 text-gray-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p> -->
+                      <p class="mt-2 text-gray-500">
+                        SISTEMA OPERATIVO: Windows 10 Home,
+                        NOMBRE DEL MODELO: IdeaPad 3,
+                        COLOR: Rojo, 
+                        MEMORIA: 4 GB DDR4, 
+                        PROCESADOR: AMD Ryzen 3, 
+                        Disco duro SSD: 128 GB
+                      </p>
+                    </div>
+                </div>
+            </div> 
+            <div class="flex-1 border rounded sm:ml-2 mt-3 rounded-xl shadow overflow-hidden bg-white" >
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                      <img class="h-full w-full object-cover md:w-48" src="image/hawei2.PNG" alt="Man looking at item at a store">
+                    </div>
+                    <div class="p-8">
+                      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Laptop</div>
+                      <a href="producto.html?id=2" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+                        Huawei Matebook X Pro
+                      </a>
+                      <p class="mt-2 text-gray-500">
+                        SISTEMA OPERATIVO: Windows 10 Home 64-bit, 
+                        NOMBRE DEL MODELO: Matebook X Pro,
+                        COLOR: Gris Espacial,
+                        MEMORIA: 16 GB DDR3,
+                        PROCESADOR: Intel Core i7,
+                        Disco duro SSD: 256 GB
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-5 footer hadow-xl bg-gradient-to-r from-blue-900 via-blue-600 to-blue-700">
+       <div class="flex justify-center">
+            <div class="text-white"> Trabaja Conosotros | </div>
+            <div class="text-white"> Terminos y Condociones | </div>
+            <div class="text-white"> Terminos y Condociones | </div>
+            <div class="text-white"> Como cuidamos de tu privacidad |  </div>
+            <div class="text-white"> Ayuda </div>
+       </div>
+    </footer>
+    <script src="js/insertarProductos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

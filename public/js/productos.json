@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "titulo":"HUAWEI Matebook 13",
+        "image":"image/hawei.png",
+        "precio": 3789000,
+        "descripcion":"SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: MateBook 13 2020, COLOR: Gris Espacial, MEMORIA: 8 GB DDR4, PROCESADOR: Intel-i5, Disco duro: 1 TB"
+    },
+    {
+        "id": 2,
+        "titulo":"Huawei Matebook X Pro",
+        "image":"image/hawei3.JPG",
+        "precio": 3789000,
+        "descripcion":"SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: Matebook X Pro, COLOR: Gris Espacial, MEMORIA: 16 GB DDR3, PROCESADOR: Intel Core i7, Disco duro SSD: 256 GB"
+    },
+    {
+        "id": 3,
+        "titulo":"Portátil ASUS VivoBook 14",
+        "image":"image/asus.jpeg",
+        "precio": 2599000,
+        "descripcion":"SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: X413JA-BV317T, COLOR: Gris Espacial, MEMORIA: 8 GB DDR4, PROCESADOR: Intel CORE i5, Disco duro SSD: 256 GB"
+    },
+    {
+        "id": 4,
+        "titulo":"LENOVOL 5 Gaming 15ARH05",
+        "image":"image/lenovol.PNG",
+        "precio": 5789000,
+        "descripcion":"SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: 15ARH05, COLOR: Negro, MEMORIA: 16 GB DDR4, PROCESADOR: Intel-i5, Disco duro ssd: 1 TB"
+    },
+    {
+        "id": 5,
+        "titulo":"DELL Vostro 3400",
+        "image":"image/dellport.PNG",
+        "precio": 2449000,
+        "descripcion":"SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: 15ARH05, COLOR: Negro, MEMORIA: 16 GB DDR4, PROCESADOR: Intel-i5, Disco duro ssd: 1 TB"
+    },
+    {
+        "id": 6,
+        "titulo":"DELL Opriplex 3280 AIO",
+        "image":"image/dell.JPG",
+        "precio": 3789000,
+        "descripcion":"SISTEMA OPERATIVO: Windows 10 Pro, NOMBRE DEL MODELO: Opriplex 3280 AIO, COLOR: Negro, MEMORIA: 4 GB DDR4, PROCESADOR: Intel-i3, Disco duro: 500 GB"
+    },
+    {
+        "id": 7,
+        "titulo":"ASUS X509MA",
+        "image":"image/asus2.PNG",
+        "precio": 1569000,
+        "descripcion":"SISTEMA OPERATIVO: Linux mint 20, NOMBRE DEL MODELO: X509MA, COLOR: Gris, MEMORIA: 4 GB DDR4, PROCESADOR: Intel-i3, Disco duro: 256 GB"
+    },
+    {
+        "id": 8,
+        "titulo":"HUAWEI Matebook 13",
+        "image":"image/hawei.png",
+        "precio": 3789000,
+        "descripcion":"SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: MateBook 13 2020, COLOR: Gris Espacial, MEMORIA: 8 GB DDR4, PROCESADOR: Intel-i5, Disco duro: 1 TB"
+    },
+    {
+        "id": 9,
+        "titulo":"DELL INTEL J4005",
+        "image":"image/dell2.PNG",
+        "precio": 1789000,
+        "descripcion":"SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: INTEL J4005, COLOR: Negro, MEMORIA: 8 GB DDR4, PROCESADOR: Intel-i5, Disco duro SSD: 256 GB"
+    },
+    {
+        "id": 10,
+        "titulo":"Portátil HP Gaming Pavilion",
+        "image":"image/phpgamin.PNG",
+        "precio": 1789000,
+        "descripcion":"SISTEMA OPERATIVO: Windows 10 Home 64, NOMBRE DEL MODELO: 15-dk0008la, COLOR: Negro, MEMORIA: 8 GB DDR4, PROCESADOR: Intel i5, Disco duro SSD: 256 GB"
+    },
+    {
+        "id": 11,
+        "titulo":"Portatil HP",
+        "image":"image/hp2.JPG",
+        "precio": 1669000,
+        "descripcion":"SISTEMA OPERATIVO: Windows 10 Home, NOMBRE DEL MODELO: 15-dk0008la, COLOR: Blanco, MEMORIA: 4 GB DDR4, PROCESADOR: AMD Ryzen 3, Disco duro SSD: 256 GB"
+    },
+    {
+        "id": 12,
+        "titulo":"Lenovol IdeaPad 3",
+        "image":"image/lenevo2.jpg",
+        "precio": 1799900,
+        "descripcion":"SISTEMA OPERATIVO: Windows 10 Home, NOMBRE DEL MODELO:  IdeaPad 3, COLOR: Rojo, MEMORIA: 4 GB DDR4, PROCESADOR: AMD Ryzen 3, Disco duro SSD: 128 GB"
+    }
+
+]

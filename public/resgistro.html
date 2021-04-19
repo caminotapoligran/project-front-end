@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link href="/tailwind.css" rel="stylesheet">
+    <title>ELECTROTECNO</title>
+</head>
+<body style="background-color: #EDF2F7;">
+
+    <nav class="flex items-center justify-between flex-wrap  bg-blue-600 p-6 shadow">
+        <div class="flex items-center flex-shrink-0 text-white mr-6 ">
+        <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+        <span class="font-semibold text-xl tracking-tight">Electrotecno</span>
+        </div>
+        <div class="block lg:hidden">
+            <button id="boton-menu"
+            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" 
+                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+        </div>
+        <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+        <div class="text-sm lg:flex-grow">
+            <a href="index.html" class="block mt-4  lg:inline-block lg:mt-0 text-white   hover:text-white mr-4">
+                Inicio
+            </a>
+            <a href="productos.html" class="block mt-4 lg:inline-block lg:mt-0 text-blue-50 hover:text-white mr-4">
+                Productos
+            </a>
+        </div>
+        <div>
+            <a href="login.html" class="inline-block text-sm px-4 py-2 leading-none  rounded mx-auto text-white  hover:text-teal-500 hover:bg-blue-500 mt-4 lg:mt-0">Ingresar</a>
+        </div>
+        <div>
+            <a href="resgistro.html" class="inline-block text-sm px-4 py-2 leading-none  rounded text-yellow-400 font-bold underline  text-white mx-auto  hover:text-teal-500 hover:bg-blue-500 mt-4 lg:mt-0">Registrarse</a>
+        </div>
+        <div>
+            <a href="compra.html" class="inline-block  text-sm px-4 py-2 ml-2  leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-900 hover:bg-white mt-4 lg:mt-0">
+                
+            <div class="flex">
+                <div> <i class="fas fa-cart-plus "></i>  </div>
+                <div class="mx-1">
+                    Carrito
+                </div>
+                <div class="rounded-full h-5 w-5 flex items-center justify-center bg-red-600" id="cant">
+                    <!-- <span class=" text-center">1</span>  -->
+                </div>
+            </div>
+            
+            </a> 
+        </div>
+        </div>
+    </nav>
+  
+    <!-- style="min-height: calc(100vh - 123px);" -->
+    <div class="container mx-auto mt-5 " style="min-height: calc(100vh - 123px);" >
+        <div class="flex justify-center items-center h-screen">
+            
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                      Nombre
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
+                    <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
+                  </div>
+                  <div class="w-full md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                      Apellidos
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                      Correo
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="example@example.com">
+                    <!-- <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p> -->
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        Contraseña
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="confirmar-password" type="password" placeholder="******************">
+                    <p class="text-gray-600 text-xs italic">Hazlo tan largo y loco como quieras</p>
+                  </div>
+                  <div class="w-full md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                       Confirmar Contraseña
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-2">
+                  <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                      Cuidad
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque">
+                  </div>
+                  <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                      Pais
+                    </label>
+                    <div class="relative">
+                      <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                        <option>Colombia</option>
+                        <option>Mexico</option>
+                        <option>Argentina</option>
+                      </select>
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
+                      Direccion
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210">
+                  </div>
+                  <div class="flex items-center justify-between px-3 mb-6 mt-3">
+                    <a  href="/public/index.html" class="bg-blue-500 hover:bg-blue-700  mb-6  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        Registrate
+                    </a>
+                    
+                </div>
+                </div>
+            </form>
+        
+        </div>
+
+    </div>
+    <footer class="mt-5 footer hadow-xl bg-gradient-to-r from-blue-900 via-blue-600 to-blue-700">
+       <div class="flex justify-center">
+            <div class="text-white"> Trabaja Conosotros | </div>
+            <div class="text-white"> Terminos y Condociones | </div>
+            <div class="text-white"> Terminos y Condociones | </div>
+            <div class="text-white"> Como cuidamos de tu privacidad |  </div>
+            <div class="text-white"> Ayuda </div>
+       </div>
+    </footer>
+    <script src="js/insertarProductos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
