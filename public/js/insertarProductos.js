@@ -187,7 +187,7 @@ function obtenerLocalStorage(e) {
     if (local == null) {
         arrayProucto = [];
     } else {
-        const urlPs = '/public/compra.html';
+        const urlPs = '/compra.html';
         let data = JSON.parse(local);
         //console.log(arrayProucto);
         //arrayProucto.push()
@@ -265,7 +265,7 @@ function carritoSpan(cant) {
 }
 
 function carritoSpan(final) {
-    const urlPs = '/public/compra.html';
+    const urlPs = '/compra.html';
     if (URLactual.pathname === urlPs) {
         const precioTotal = document.getElementById('total')
         let totall = final;
