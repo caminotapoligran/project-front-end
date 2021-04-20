@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
     fetch('js/productos.json').
     then(res => res.json()).
     then(datos => {
-        const urlPs = '/public/producto.html';
+        // TODO: Version solo para netlify (/public/productos.html
+        const urlPs = '/producto.html';
         cardProdcutos(datos);
         obtenerLocalStorage();
         if (URLactual.pathname === urlPs) {
