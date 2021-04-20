@@ -5,8 +5,94 @@ const carrito = document.getElementById('cant');
 const contCompra = document.getElementById('contCompra');
 //let cantidad, titulo, precio;
 let objetProduct = {};
-let arrayProucto = []; 
+let arrayProucto = [];
 
+let productosFetch = [{
+        "id": 1,
+        "titulo": "HUAWEI Matebook 13",
+        "image": "image/hawei.png",
+        "precio": 3789000,
+        "descripcion": "SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: MateBook 13 2020, COLOR: Gris Espacial, MEMORIA: 8 GB DDR4, PROCESADOR: Intel-i5, Disco duro: 1 TB"
+    },
+    {
+        "id": 2,
+        "titulo": "Huawei Matebook X Pro",
+        "image": "image/hawei3.JPG",
+        "precio": 3789000,
+        "descripcion": "SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: Matebook X Pro, COLOR: Gris Espacial, MEMORIA: 16 GB DDR3, PROCESADOR: Intel Core i7, Disco duro SSD: 256 GB"
+    },
+    {
+        "id": 3,
+        "titulo": "Portátil ASUS VivoBook 14",
+        "image": "image/asus.jpeg",
+        "precio": 2599000,
+        "descripcion": "SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: X413JA-BV317T, COLOR: Gris Espacial, MEMORIA: 8 GB DDR4, PROCESADOR: Intel CORE i5, Disco duro SSD: 256 GB"
+    },
+    {
+        "id": 4,
+        "titulo": "LENOVOL 5 Gaming 15ARH05",
+        "image": "image/lenovol.PNG",
+        "precio": 5789000,
+        "descripcion": "SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: 15ARH05, COLOR: Negro, MEMORIA: 16 GB DDR4, PROCESADOR: Intel-i5, Disco duro ssd: 1 TB"
+    },
+    {
+        "id": 5,
+        "titulo": "DELL Vostro 3400",
+        "image": "image/dellport.PNG",
+        "precio": 2449000,
+        "descripcion": "SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: 15ARH05, COLOR: Negro, MEMORIA: 16 GB DDR4, PROCESADOR: Intel-i5, Disco duro ssd: 1 TB"
+    },
+    {
+        "id": 6,
+        "titulo": "DELL Opriplex 3280 AIO",
+        "image": "image/dell.JPG",
+        "precio": 3789000,
+        "descripcion": "SISTEMA OPERATIVO: Windows 10 Pro, NOMBRE DEL MODELO: Opriplex 3280 AIO, COLOR: Negro, MEMORIA: 4 GB DDR4, PROCESADOR: Intel-i3, Disco duro: 500 GB"
+    },
+    {
+        "id": 7,
+        "titulo": "ASUS X509MA",
+        "image": "image/asus2.PNG",
+        "precio": 1569000,
+        "descripcion": "SISTEMA OPERATIVO: Linux mint 20, NOMBRE DEL MODELO: X509MA, COLOR: Gris, MEMORIA: 4 GB DDR4, PROCESADOR: Intel-i3, Disco duro: 256 GB"
+    },
+    {
+        "id": 8,
+        "titulo": "HUAWEI Matebook 13",
+        "image": "image/hawei.png",
+        "precio": 3789000,
+        "descripcion": "SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: MateBook 13 2020, COLOR: Gris Espacial, MEMORIA: 8 GB DDR4, PROCESADOR: Intel-i5, Disco duro: 1 TB"
+    },
+    {
+        "id": 9,
+        "titulo": "DELL INTEL J4005",
+        "image": "image/dell2.PNG",
+        "precio": 1789000,
+        "descripcion": "SISTEMA OPERATIVO: Windows 10 Home 64-bit, NOMBRE DEL MODELO: INTEL J4005, COLOR: Negro, MEMORIA: 8 GB DDR4, PROCESADOR: Intel-i5, Disco duro SSD: 256 GB"
+    },
+    {
+        "id": 10,
+        "titulo": "Portátil HP Gaming Pavilion",
+        "image": "image/phpgamin.PNG",
+        "precio": 1789000,
+        "descripcion": "SISTEMA OPERATIVO: Windows 10 Home 64, NOMBRE DEL MODELO: 15-dk0008la, COLOR: Negro, MEMORIA: 8 GB DDR4, PROCESADOR: Intel i5, Disco duro SSD: 256 GB"
+    },
+    {
+        "id": 11,
+        "titulo": "Portatil HP",
+        "image": "image/hp2.JPG",
+        "precio": 1669000,
+        "descripcion": "SISTEMA OPERATIVO: Windows 10 Home, NOMBRE DEL MODELO: 15-dk0008la, COLOR: Blanco, MEMORIA: 4 GB DDR4, PROCESADOR: AMD Ryzen 3, Disco duro SSD: 256 GB"
+    },
+    {
+        "id": 12,
+        "titulo": "Lenovol IdeaPad 3",
+        "image": "image/lenevo2.jpg",
+        "precio": 1799900,
+        "descripcion": "SISTEMA OPERATIVO: Windows 10 Home, NOMBRE DEL MODELO:  IdeaPad 3, COLOR: Rojo, MEMORIA: 4 GB DDR4, PROCESADOR: AMD Ryzen 3, Disco duro SSD: 128 GB"
+    }
+
+];
 
 //url
 let URLactual = window.location;
@@ -18,29 +104,30 @@ let total = 0;
 
 
 
-document.addEventListener("DOMContentLoaded", function (e) {
+document.addEventListener("DOMContentLoaded", function(e) {
     //obteniendo los datos del json creado
-    fetch('js/productos.json').
-        then(res => res.json()).
-        then(datos => {
-            const urlPs = '/public/producto.html';
-            cardProdcutos(datos);
-            obtenerLocalStorage();
-           if(URLactual.pathname === urlPs){
-              //  console.log('hola');
-                vermas(datos)
-           }
-        })
+    // fetch('js/productos.json').
+    // then(res => res.json()).
+    // then(datos => {
+    //     const urlPs = '/public/producto.html';
+    //     cardProdcutos(datos);
+    //     obtenerLocalStorage();
+    //     if (URLactual.pathname === urlPs) {
+    //         //  console.log('hola');
+    //         vermas(datos)
+    //     }
+    // })
+    cardProdcutos(productosFetch);
 });
 
 //insertando productos.html en el vista prodcutos
 function cardProdcutos(datos) {
     //console.log(datos);
     const urlPs = '/public/productos.html';
-    if(URLactual.pathname === urlPs){
+    if (URLactual.pathname === urlPs) {
         contenido.innerHTML = '';
 
-        for(let item of datos ){
+        for (let item of datos) {
             //console.log(item);
             contenido.innerHTML += `
                 <div class="shadow-lg  border rounded border-gray-900 bg-white roundo">
@@ -72,16 +159,16 @@ function cardProdcutos(datos) {
 
 }
 
-function vermas( datos) {
+function vermas(datos) {
     var queryString = window.location.search;
     var urlParams = new URLSearchParams(queryString);
     var anuncioParam = urlParams.get('id');
     //console.log(anuncioParam);
     verProducto.innerHTML = '';
 
-    for(let item of datos){
+    for (let item of datos) {
         //console.log(item.id);
-        if(item.id === Number(anuncioParam)){
+        if (item.id === Number(anuncioParam)) {
             verProducto.innerHTML += `
                 <div class="grid sm:divide-x sm:divide-blue-300 sm:grid-cols-4 sm:flex graid-cols-1 bg-white rounded-xl border border-blue-300 " >
                     <!-- imagen -->
@@ -150,13 +237,13 @@ function vermas( datos) {
 
 
 function clickAgregarCarrito(e) {
-   const cantidad = document.getElementById('cantidad').value;
-   const titulo = document.getElementById('titulo');
-   const precio = document.getElementById('precio');
-   const foto = document.getElementById('imagen');
-   const idProduct = document.getElementById('idProduct').value;
-   //console.log(idProduct);
-        
+    const cantidad = document.getElementById('cantidad').value;
+    const titulo = document.getElementById('titulo');
+    const precio = document.getElementById('precio');
+    const foto = document.getElementById('imagen');
+    const idProduct = document.getElementById('idProduct').value;
+    //console.log(idProduct);
+
     objetProduct = {
         id: Number(idProduct),
         cantidad: Number(cantidad),
@@ -167,38 +254,38 @@ function clickAgregarCarrito(e) {
     }
 
     arrayProucto.push(objetProduct);
-  //  console.log(arrayProucto);
+    //  console.log(arrayProucto);
     agregarlocalStorage(arrayProucto)
 }
 
 function agregarlocalStorage(arrayProucto) {
-   // console.log(JSON.stringify(arrayProucto));
+    // console.log(JSON.stringify(arrayProucto));
     localStorage.setItem("producto", JSON.stringify(arrayProucto))
-    //let data = JSON.parse(localStora);
-    //location.reload();
-    //console.log(arrayProucto);
+        //let data = JSON.parse(localStora);
+        //location.reload();
+        //console.log(arrayProucto);
 }
 
 function obtenerLocalStorage(e) {
     const local = localStorage.getItem('producto');
-    
+
     if (local == null) {
         arrayProucto = [];
-    }else{
+    } else {
         const urlPs = '/public/compra.html';
         let data = JSON.parse(local);
         //console.log(arrayProucto);
         //arrayProucto.push()
-        if(URLactual.pathname === urlPs){
+        if (URLactual.pathname === urlPs) {
             contCompra.innerHTML = '';
         }
         data.forEach(element => {
 
             cant += element.cantidad;
             total += element.precio;
-            
+
             // console.log(element.foto);
-            if(URLactual.pathname === urlPs){
+            if (URLactual.pathname === urlPs) {
                 contCompra.innerHTML += `
                     <div class="sm:flex  grid-cols-1 flex justify-center items-center">
                         <div class="sm:w-3/5 grid-span-auto border mx-3 ml-3 mt-3 rounded  bg-white rounded-xl shadow overflow-hidden">
@@ -233,20 +320,20 @@ function obtenerLocalStorage(e) {
             }
         });
         carritoSpan(cant);
-        if(URLactual.pathname === urlPs){
-           // console.log(total);
+        if (URLactual.pathname === urlPs) {
+            // console.log(total);
             carritoSpan(total);
         }
-        
+
         //console.log(cant);
         let cantidad = cant;
         if (cantidad == 0) {
             carrito.innerHTML = `<span class=" text-center">0</span> `;
         }
         carrito.innerHTML = `<span class=" text-center">${cantidad}</span> `;
-       
+
     }
-    
+
 }
 
 function carritoSpan(cant) {
@@ -255,21 +342,20 @@ function carritoSpan(cant) {
         carrito.innerHTML = `<span class=" text-center">0</span> `;
     }
     carrito.innerHTML = `<span class=" text-center">${cantidad}</span> `;
-    
-    
 
-      
-   
+
+
+
+
 }
 
 function carritoSpan(final) {
     const urlPs = '/public/compra.html';
-    if(URLactual.pathname === urlPs){
-        const precioTotal =  document.getElementById('total')
-        let totall = final;    
+    if (URLactual.pathname === urlPs) {
+        const precioTotal = document.getElementById('total')
+        let totall = final;
         precioTotal.innerHTML = `<span class=" text-center bg-gray-500 w-full text-white align-middle py-2 px-4 rounded font-bold ">TOTAL A PAGAR: $${totall}</span> `;
     }
     //console.log(cant);    
-   
-}
 
+}
